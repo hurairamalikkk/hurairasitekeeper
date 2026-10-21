@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website and Store Maintenance Plans | Malik Huraira</title>
+<meta name="description" content="Affordable monthly maintenance for WordPress websites and online stores, from $39 a month. Updates, backups, security, speed and edits, all explained clearly.">
+<meta property="og:title" content="Website and Store Maintenance Plans">
+<meta property="og:description" content="Keep your website or online store fast, secure and up to date. Plans from $39 a month.">
+<meta name="theme-color" content="#2563EB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%232563EB%27/%3E%3Ctext x=%2750%27 y=%2765%27 font-size=%2750%27 font-family=%27sans-serif%27 font-weight=%27800%27 text-anchor=%27middle%27 fill=%27white%27%3EMH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1220;--muted:#5B6575;--line:#E5E8EE;--soft:#F6F7F9;--white:#fff;--blue:#2563EB;--blue-d:#1D4ED8;--blue-s:#EAF1FF;--ok:#16A34A;
+--f:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.7 var(--f);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{line-height:1.1;letter-spacing:-.03em;font-weight:800}
+h2{font-size:clamp(28px,3.8vw,42px)}
+.sub{color:var(--muted);max-width:62ch;margin:14px 0 40px;font-size:18px}
+.center{text-align:center}.center .sub{margin-inline:auto}
+section{padding:92px 0;scroll-margin-top:72px}
+.alt{background:var(--soft);border-block:1px solid var(--line)}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;letter-spacing:-.02em}
+.logo b{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--blue);color:#fff;font-size:14px}
+.logo i{font-style:normal;font-weight:500;font-size:12px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:1px 8px}
+.menu{display:flex;align-items:center;gap:22px;font-size:15px;font-weight:500}
+.menu a{text-decoration:none;color:var(--muted)}.menu a:hover{color:var(--ink)}
+.btn{display:inline-block;padding:12px 22px;border-radius:12px;font:600 15.5px var(--f);text-decoration:none;border:1px solid var(--line);background:var(--white);cursor:pointer;transition:all .15s;text-align:center}
+.btn:hover{background:var(--soft)}
+.btn.pri{background:var(--blue);border-color:var(--blue);color:#fff}.btn.pri:hover{background:var(--blue-d)}
+.btn.dark{background:var(--ink);border-color:var(--ink);color:#fff}.btn.dark:hover{background:#243044}
+.btn.sm{padding:8px 16px;font-size:14px}.btn.full{display:block;width:100%}
+
+/* hero */
+.hero{padding:84px 0 40px;text-align:center;background:radial-gradient(900px 400px at 50% -10%,var(--blue-s),transparent 70%)}
+.hero h1{font-size:clamp(38px,6.2vw,72px);max-width:17ch;margin:0 auto}
+.hero .lead{max-width:60ch;margin:22px auto 30px;font-size:19px;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.seg{display:inline-flex;margin:48px 0 24px;border:1px solid var(--line);border-radius:999px;padding:4px;background:var(--soft)}
+.seg button{font:600 15px var(--f);border:0;background:none;padding:9px 24px;border-radius:999px;cursor:pointer;color:var(--muted)}
+.seg button[aria-selected=true]{background:var(--white);color:var(--ink);box-shadow:0 1px 4px rgba(11,18,32,.15)}
+.ws{max-width:880px;margin:0 auto;text-align:left;border:1px solid var(--line);border-radius:18px;background:var(--white);box-shadow:0 24px 60px -24px rgba(11,18,32,.25);overflow:hidden}
+.ws[hidden]{display:none}
+.wsbar{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--soft)}
+.wsbar i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.wsbar span{margin-left:10px;font-size:13px;color:var(--muted)}
+.wsb{padding:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+.stat{border:1px solid var(--line);border-radius:14px;padding:16px}
+.stat small{display:block;color:var(--muted);font-size:13px;font-weight:500}
+.stat strong{display:block;font-size:20px;margin-top:4px;letter-spacing:-.02em}
+.stat em{display:inline-block;margin-top:6px;font-style:normal;font-size:12px;font-weight:600;color:var(--ok);background:#E8F7EE;border-radius:999px;padding:1px 9px}
+.cap{max-width:880px;margin:14px auto 0;color:var(--muted);font-size:14px}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;text-align:left}
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:26px}
+.card .ic{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--blue-s);margin-bottom:16px;font-size:21px}
+.card h3{font-size:19px;margin-bottom:8px;letter-spacing:-.02em}
+.card p{color:var(--muted);font-size:16px}
+.card p+p{margin-top:10px}
+
+/* plans */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left}
+.pane[hidden]{display:none}
+.plan{position:relative;display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:20px;padding:30px 26px}
+.plan.pop{border:2px solid var(--blue);box-shadow:0 20px 50px -22px rgba(37,99,235,.45)}
+.flag{position:absolute;top:-13px;left:24px;background:var(--blue);color:#fff;border-radius:999px;padding:3px 14px;font-size:13px;font-weight:700}
+.plan h3{font-size:23px}
+.plan .for{color:var(--muted);font-size:15px;margin:8px 0 18px;min-height:70px}
+.price{font-size:48px;font-weight:800;letter-spacing:-.04em;line-height:1}
+.price small{font-size:16px;font-weight:500;color:var(--muted);letter-spacing:0}
+.plan ul{list-style:none;padding:0;margin:22px 0 26px;display:grid;gap:10px;font-size:15.5px;flex:1}
+.plan li{padding-left:28px;position:relative;line-height:1.5}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--blue);font-weight:800}
+.tw{overflow-x:auto;margin-top:54px;border:1px solid var(--line);border-radius:16px;background:var(--white)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:15.5px;text-align:left}
+th,td{padding:14px 18px;border-bottom:1px solid var(--line)}
+th{background:var(--soft);font-weight:700}
+td:first-child{font-weight:600}
+tr:last-child td{border-bottom:0}
+td.no{color:#A4ACB9}
+.tt{margin-top:54px;font-size:22px;letter-spacing:-.02em}
+.note{margin:28px auto 0;max-width:70ch;color:var(--muted);font-size:15.5px;text-align:center}
+
+/* two col text */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.two ul{padding-left:20px;color:var(--muted)}
+.two li{margin-bottom:10px}
+.two h3{font-size:24px;margin-bottom:14px}
+.steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;counter-reset:s;text-align:left}
+.steps li{counter-increment:s;border:1px solid var(--line);border-radius:16px;padding:26px;background:var(--white)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;margin-bottom:14px}
+.steps strong{display:block;font-size:19px;margin-bottom:6px;letter-spacing:-.02em}
+.steps span{color:var(--muted);font-size:16px}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;text-align:left}
+.links a{display:block;border:1px solid var(--line);background:var(--white);border-radius:16px;padding:24px;text-decoration:none;transition:border-color .15s,transform .15s}
+.links a:hover{border-color:var(--blue);transform:translateY(-3px)}
+.links h3{font-size:20px;margin-bottom:6px}
+.links p{color:var(--muted);font-size:15.5px}
+.links b{display:block;margin-top:12px;color:var(--blue);font-size:15px}
+
+details{border-bottom:1px solid var(--line);padding:20px 0}
+details summary{cursor:pointer;font-weight:600;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+details summary::after{content:"+";font-size:26px;line-height:1;color:var(--blue)}
+details[open] summary::after{content:"−"}
+details p{color:var(--muted);margin-top:12px;max-width:68ch}
+
+.cta{background:var(--ink);color:#fff;border-radius:24px;padding:64px 40px;text-align:center}
+.cta h2{max-width:20ch;margin:0 auto 16px}
+.cta p{color:#B7C0CE;max-width:56ch;margin:0 auto 30px}
+.cta .btn{border-color:#2A3650;background:#16213A;color:#fff}.cta .btn:hover{background:#1F2D4A}
+.cta .btn.pri{background:var(--blue);border-color:var(--blue)}
+.cinfo{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;margin-top:28px;font-size:15px;color:#B7C0CE}
+.cinfo a{color:#fff;font-weight:600;text-decoration:none}
+footer{padding:44px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px}
+footer b{color:var(--ink);display:block;margin-bottom:4px}
+footer nav{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start}
+footer a{text-decoration:none}footer a:hover{color:var(--ink)}
+
+@media(max-width:940px){.plans{grid-template-columns:1fr;max-width:500px;margin:0 auto}.plan .for{min-height:0}.two{grid-template-columns:1fr;gap:32px}}
+@media(max-width:820px){.menu a:not(.btn){display:none}section{padding:68px 0}.cta{padding:44px 22px}.logo i{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.links a{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top"><b>MH</b>Malik Huraira <i>Maintenance</i></a>
+    <nav class="menu" aria-label="Main">
+      <a href="#why">Why it matters</a>
+      <a href="#explained">What you get</a>
+      <a href="#plans">Plans</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn sm" href="https://wa.me/923011329310" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn pri sm" href="#contact">Get started</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Websites and stores that stay fast, safe and online.</h1>
+      <p class="lead">I look after WordPress websites and online stores every month. I keep everything updated, back it up, watch it for problems and make small changes when you need them, so you never have to worry about the technical side.</p>
+      <div class="btns">
+        <a class="btn pri" href="#plans">See plans, from $39 a month</a>
+        <a class="btn" href="#contact">Get a free site check</a>
+      </div>
+
+      <div class="seg" role="tablist" aria-label="What do you run?" data-group="hero">
+        <button role="tab" id="h1t" aria-selected="true" aria-controls="h1p">I have a website</button>
+        <button role="tab" id="h2t" aria-selected="false" aria-controls="h2p">I have a store</button>
+      </div>
+
+      <div class="ws" id="h1p" role="tabpanel" aria-labelledby="h1t">
+        <div class="wsbar"><i></i><i></i><i></i><span>Example monthly report: business website</span></div>
+        <div class="wsb">
+          <div class="stat"><small>Site uptime</small><strong>Automatic checks</strong><em>Alerts sent to me</em></div>
+          <div class="stat"><small>Backups</small><strong>Off-site copies</strong><em>Restorable</em></div>
+          <div class="stat"><small>Updates</small><strong>Tested first</strong><em>Up to date</em></div>
+          <div class="stat"><small>Security</small><strong>Scanned</strong><em>Issues fixed</em></div>
+        </div>
+      </div>
+      <div class="ws" id="h2p" role="tabpanel" aria-labelledby="h2t" hidden>
+        <div class="wsbar"><i></i><i></i><i></i><span>Example monthly report: online store</span></div>
+        <div class="wsb">
+          <div class="stat"><small>Checkout and payments</small><strong>Test orders</strong><em>Working</em></div>
+          <div class="stat"><small>Backups</small><strong>Off-site copies</strong><em>Restorable</em></div>
+          <div class="stat"><small>Products</small><strong>Added and edited</strong><em>On request</em></div>
+          <div class="stat"><small>Speed</small><strong>Optimized</strong><em>Faster pages</em></div>
+        </div>
+      </div>
+      <p class="cap">These panels show what each monthly report covers. Your real report lists exactly what I did that month.</p>
+    </div>
+  </div>
+
+  <section id="why">
+    <div class="wrap center">
+      <h2>Why a website needs regular care</h2>
+      <p class="sub">A website is not something you build once and forget. Software behind it changes constantly, and visitors and hackers both notice when it falls behind. Here is what usually goes wrong without maintenance.</p>
+      <div class="grid">
+        <div class="card"><div class="ic">🛡️</div><h3>It gets hacked</h3><p>WordPress, themes and plugins release updates all the time, and many of them fix security holes. Attackers scan the internet for sites still running old versions. A hacked site can show spam, redirect visitors or be taken offline completely.</p></div>
+        <div class="card"><div class="ic">🐢</div><h3>It slows down</h3><p>Over time, images get heavier, the database fills with clutter and plugins pile up. Slow pages make visitors leave and can push you down in Google results, which means fewer customers finding you.</p></div>
+        <div class="card"><div class="ic">💥</div><h3>Things quietly break</h3><p>A contact form stops sending emails, a checkout button fails, or a page looks wrong on phones. Nobody tells you, so you lose enquiries and sales for weeks before you notice.</p></div>
+        <div class="card"><div class="ic">💾</div><h3>No way back</h3><p>If a bad update or an attack damages your site and there’s no backup, you may lose your content, your products and your design. A good backup turns a disaster into a short delay.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="explained" class="alt">
+    <div class="wrap">
+      <h2>What each part of the service means</h2>
+      <p class="sub">Maintenance can sound vague, so here is exactly what each item in the plans below involves, in plain English.</p>
+      <div class="grid">
+        <div class="card"><h3>Updates</h3><p>I update WordPress itself, your theme and your plugins (or the apps and theme on Shopify and Wix). Updates fix bugs and security problems, but they can also break things if applied carelessly, so I take a backup first and check your site afterwards.</p></div>
+        <div class="card"><h3>Backups</h3><p>A backup is a full saved copy of your site, kept away from your hosting so it survives even if the server fails. Weekly means a copy every week. Daily means a copy every day, so you’d never lose more than a day of changes.</p></div>
+        <div class="card"><h3>Uptime alerts</h3><p>An automatic tool checks your site every few minutes and emails me if it stops loading. I’m not watching a screen all day, so I don’t promise round-the-clock monitoring, but I see the alert and respond within your plan’s reply time, often before customers complain.</p></div>
+        <div class="card"><h3>Security scan and cleanup</h3><p>I scan your site for known vulnerabilities and suspicious files. On plans that include cleanup, I also remove malware and repair the damage if your site is infected.</p></div>
+        <div class="card"><h3>Speed optimization</h3><p>I compress images, clear database clutter, review heavy plugins and tune caching so pages load faster. Faster sites keep visitors longer and tend to do better in search.</p></div>
+        <div class="card"><h3>Edit time</h3><p>Hours you can use for changes: updating text, swapping images, adding a page, changing a banner, and similar jobs. Hours reset every month and don’t roll over. Bigger projects like redesigns are quoted separately.</p></div>
+        <div class="card"><h3>Checkout and payment tests</h3><p>For stores, I place test orders to confirm customers can add to cart, pay and receive confirmation emails. A broken checkout silently costs you sales, so this is checked on a schedule.</p></div>
+        <div class="card"><h3>Product edits</h3><p>For stores, I add or update products for you: titles, descriptions, photos, prices and stock. The plan lists how many products are included each month.</p></div>
+        <div class="card"><h3>Staging copy</h3><p>A private duplicate of your site. On higher plans I test updates there first, so any problem shows up on the copy instead of your live site.</p></div>
+        <div class="card"><h3>SEO health check</h3><p>A monthly look at the basics search engines care about: page titles, broken links, missing descriptions and indexing problems. You get a short list of what I fixed or recommend.</p></div>
+        <div class="card"><h3>Monthly report</h3><p>A summary of what I did, what I found and what I suggest next. The short version covers the essentials. The plain-English version explains every item so you always know what you’re paying for.</p></div>
+        <div class="card"><h3>Support reply time</h3><p>How quickly I respond to your messages during my working hours (Pakistan time). It’s a response time, not a fixing time. Bigger problems take longer, but you’ll always hear back within your plan’s window.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <div class="wrap center">
+      <h2>Simple monthly plans</h2>
+      <p class="sub">Choose the plan that fits your site and your budget. Every plan has the same promise: your site is looked after properly by one developer who knows it. You can switch plans at any time.</p>
+      <div class="seg" role="tablist" aria-label="Plan type" data-group="plans">
+        <button role="tab" id="p1t" aria-selected="true" aria-controls="sites">Websites</button>
+        <button role="tab" id="p2t" aria-selected="false" aria-controls="stores">Online stores</button>
+      </div>
+      <div class="pane" id="sites" role="tabpanel" aria-labelledby="p1t"></div>
+      <div class="pane" id="stores" role="tabpanel" aria-labelledby="p2t" hidden></div>
+      <p class="note">All prices are in US dollars per month and billed monthly. Pay for a year upfront and get 2 months free. Extra edit time is $20 per hour. Not sure which plan fits? Ask for a free site check and I’ll recommend one honestly, including the cheapest one that does the job.</p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap two">
+      <div>
+        <h3>What’s included in every plan</h3>
+        <ul>
+          <li>One developer who learns your site and stays with it</li>
+          <li>A safety backup before any update, so changes can be undone</li>
+          <li>Fixes for any problems caused by updates, at no extra charge and without using your edit hours</li>
+          <li>Clear messages with no technical jargon</li>
+          <li>No long contract: cancel any time with 30 days’ notice</li>
+          <li>A clean handover of everything if you ever leave</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What isn’t included</h3>
+        <ul>
+          <li>Hosting, domain names and paid plugin or app licences, which are billed by their providers and stay in your name</li>
+          <li>Full redesigns, rebuilding a site from scratch or large new features, which I’ll quote separately</li>
+          <li>Content writing, photography and advertising</li>
+          <li>Recovery of sites that were never backed up and are already lost</li>
+          <li>Instant support at any hour. I reply during my working hours (Pakistan time), as fast as your plan promises</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap center">
+      <h2>How it works, start to finish</h2>
+      <p class="sub">Getting started is simple, and you won’t need to learn anything technical.</p>
+      <ol class="steps">
+        <li><strong>Free site check</strong><span>Send me your website address. I review it and tell you what’s working, what needs attention and which plan fits. There’s no charge and no obligation.</span></li>
+        <li><strong>Choose a plan</strong><span>Pick the plan you like and I send an invoice. You’ll create a separate login for me, which you can remove whenever you want.</span></li>
+        <li><strong>Setup</strong><span>I take a first full backup, safely bring everything up to date, switch on monitoring and fix the issues I found in the check.</span></li>
+        <li><strong>Ongoing care</strong><span>Each month I maintain your site, handle your requests within your plan’s hours and send you a report on what was done.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap center">
+      <h2>Sites I’m currently working on</h2>
+      <p class="sub">Here are live websites I’m currently working on. Open them to see my work in practice. My experience includes WordPress theme and plugin customization, custom coding, e-commerce and Shopify, backed by a computer science degree and over 2 years of professional experience.</p>
+      <div class="links">
+        <a href="https://thesalamaward.com" target="_blank" rel="noopener"><h3>The Salam Award</h3><p>A global storytelling award for science fiction and imaginative fiction, with submissions, past winners and workshops.</p><b>Visit website →</b></a>
+        <a href="https://tasavvurnama.com" target="_blank" rel="noopener"><h3>Tasavvur Magazine</h3><p>A South Asian speculative fiction magazine with issues, stories, book reviews and submissions.</p><b>Visit website →</b></a>
+        <a href="https://breakingthebox.org" target="_blank" rel="noopener"><h3>Breaking the Box</h3><p>A non-profit initiative promoting arts and letters in South Asia, with several supported projects.</p><b>Visit website →</b></a>
+      </div>
+      <p class="note"><a href="https://www.linkedin.com/in/huraira-malik/" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600">See my full background on LinkedIn →</a></p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap" style="max-width:820px">
+      <h2>Questions people ask</h2>
+      <p class="sub">If you don’t see your question here, send me a message and I’ll answer it.</p>
+      <details><summary>Do you need access to my website?</summary><p>Yes. I need an admin login for your site and access to your hosting if possible. You should create a separate account for me, so you can remove my access any time without changing your own password.</p></details>
+      <details><summary>Which platforms do you work with?</summary><p>WordPress and WooCommerce are my main focus. I also work with Shopify and Wix Studio for edits, product updates, apps and fixes. On those platforms the company handles hosting and core updates, so my work focuses on your apps, theme, content and store settings.</p></details>
+      <details><summary>What counts as an edit?</summary><p>Small, specific changes such as updating text, replacing images, adding a page, changing a banner or button, or adjusting a menu. If a request is too big for your plan’s hours, I’ll tell you before I start and offer a fixed quote.</p></details>
+      <details><summary>What if something breaks?</summary><p>I restore from a backup if needed and fix the problem. If it was caused by an update I made, the fix is free and doesn’t use your edit hours.</p></details>
+      <details><summary>Can you fix my site if it’s already broken or hacked?</summary><p>Usually yes. Tell me what’s happening and I’ll look at it for free before recommending anything. Cleanup of a hacked site is included on plans that mention it.</p></details>
+      <details><summary>I’m in a different time zone. Is that a problem?</summary><p>I’m based in Lahore, Pakistan (UTC+5). Because most maintenance happens in the background, the time difference rarely matters. I reply during my working hours, and your plan states how fast: from within 24 hours on the starter plans to within 4 hours on the top plans. I’m not available around the clock, but I respond quickly and take urgent problems seriously.</p></details>
+      <details><summary>Is there a contract?</summary><p>No long contract. Plans renew monthly and you can cancel with 30 days’ notice. I’ll hand over any files, logins and notes so you’re never locked in.</p></details>
+      <details><summary>How do I pay?</summary><p>You’re invoiced in US dollars each month, or once a year if you choose the yearly option. I’ll confirm the available payment methods when we start.</p></details>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta">
+        <h2>Let’s look at your website together</h2>
+        <p>Send me your website address and a few words about your business. I’ll check it for free, tell you honestly what needs attention and recommend the plan that fits. No pressure.</p>
+        <div class="btns">
+          <a class="btn pri" href="mailto:hurairamalik2200@gmail.com?subject=Free%20website%20check&body=Hi%20Malik%2C%0A%0AMy%20website%20is%3A%20%0AIt%20runs%20on%3A%20(WordPress%20%2F%20WooCommerce%20%2F%20Shopify%20%2F%20Wix)%0A">Email me</a>
+          <a class="btn" href="https://wa.me/923011329310?text=Hi%20Malik%2C%20I%27d%20like%20a%20free%20check%20of%20my%20website" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" href="https://www.linkedin.com/in/huraira-malik/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="cinfo"><span>Email <a href="mailto:hurairamalik2200@gmail.com">hurairamalik2200@gmail.com</a></span><span>WhatsApp <a href="https://wa.me/923011329310" target="_blank" rel="noopener">+92 301 1329310</a></span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Malik Huraira</b>Website and store maintenance from Lahore, Pakistan.<br>© 2026 Malik Abu Huraira</div>
+    <nav aria-label="Footer"><a href="#plans">Plans</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="mailto:hurairamalik2200@gmail.com">Email</a></nav>
+  </div>
+</footer>
+
+<script>
+/* EDIT HERE: change prices, wording or any plan detail in this list. Cards and tables update automatically. */
+const D = {
+  sites: {
+    names: ["Essential", "Growth", "Pro"],
+    price: [39, 79, 129],
+    who: ["For small, simple sites that mainly need to stay safe, backed up and online.", "For business sites that bring in enquiries and need steady attention every month.", "For important sites that change often and can’t afford downtime or surprises."],
+    rows: [
+      ["Updates (WordPress, theme, plugins)", "Monthly", "Weekly", "Weekly, tested on a staging copy"],
+      ["Backups (off-site)", "Weekly", "Daily", "Daily"],
+      ["Uptime alerts (automatic checks)", "✓", "✓", "✓"],
+      ["Security scan", "Monthly scan", "Monthly scan and malware cleanup", "Monthly scan and malware cleanup"],
+      ["Speed optimization", "—", "Monthly", "Monthly"],
+      ["Staging copy for safe testing", "—", "—", "✓"],
+      ["SEO health check", "—", "—", "Monthly"],
+      ["Edit time per month", "1 hour", "2 hours", "4 hours"],
+      ["Monthly report", "Short summary", "Plain-English report", "Detailed report"],
+      ["Support reply time", "Within 24 hours", "Within 12 hours", "Within 4 hours"]
+    ]
+  },
+  stores: {
+    names: ["Store Essential", "Store Growth", "Store Pro"],
+    price: [69, 119, 170],
+    who: ["For small shops with a simple catalog that mostly need to stay safe and working.", "For stores that sell every week and keep adding or changing products.", "For busy stores where every hour of downtime costs sales."],
+    rows: [
+      ["Updates (platform, plugins or apps)", "Monthly", "Weekly", "Weekly, tested on a staging copy"],
+      ["Backups (off-site)", "Weekly", "Daily", "Daily"],
+      ["Uptime alerts (automatic checks)", "✓", "✓", "✓"],
+      ["Checkout and payment test", "Monthly", "Weekly", "Weekly"],
+      ["Security scan", "Monthly scan", "Monthly scan and malware cleanup", "Monthly scan and malware cleanup"],
+      ["Speed optimization", "—", "Monthly", "Monthly"],
+      ["Products added or edited per month", "Up to 10", "Up to 25", "Up to 50"],
+      ["Staging copy for safe testing", "—", "—", "✓"],
+      ["Store health and SEO check", "—", "—", "Monthly"],
+      ["Edit time per month", "2 hours", "4 hours", "6 hours"],
+      ["Monthly report", "Short summary", "Plain-English report", "Detailed report"],
+      ["Support reply time", "Within 24 hours", "Within 12 hours", "Within 4 hours"]
+    ]
+  }
+};
+
+function build(key){
+  const d = D[key], root = document.getElementById(key);
+  let cards = '<div class="plans">';
+  d.names.forEach((n, i) => {
+    const items = d.rows.filter(r => r[i+1] !== "—").map(r => '<li>' + (r[i+1] === "✓" ? r[0] : r[0] + ": " + r[i+1]) + '</li>').join("");
+    const subj = encodeURIComponent(n + " plan");
+    cards += '<article class="plan' + (i === 1 ? ' pop' : '') + '">' + (i === 1 ? '<span class="flag">Most popular</span>' : '') +
+      '<h3>' + n + '</h3><p class="for">' + d.who[i] + '</p><div class="price">$' + d.price[i] + '<small> / month</small></div><ul>' + items +
+      '</ul><a class="btn ' + (i === 1 ? 'pri' : 'dark') + ' full" href="mailto:hurairamalik2200@gmail.com?subject=' + subj + '">Choose ' + n + '</a></article>';
+  });
+  cards += '</div>';
+  let t = '<h3 class="tt">Compare every detail</h3><div class="tw"><table><thead><tr><th>What you get</th>' + d.names.map(n => '<th>' + n + '</th>').join("") + '</tr></thead><tbody>' +
+    '<tr><td>Price per month</td>' + d.price.map(p => '<td><b>$' + p + '</b></td>').join("") + '</tr>' +
+    d.rows.map(r => '<tr><td>' + r[0] + '</td>' + r.slice(1).map(v => '<td' + (v === "—" ? ' class="no"' : '') + '>' + v + '</td>').join("") + '</tr>').join("") +
+    '</tbody></table></div>';
+  root.innerHTML = cards + t;
+}
+build("sites"); build("stores");
+
+document.querySelectorAll(".seg").forEach(g => {
+  const btns = g.querySelectorAll("button");
+  btns.forEach(b => b.addEventListener("click", () => {
+    btns.forEach(x => {
+      const on = x === b;
+      x.setAttribute("aria-selected", on);
+      document.getElementById(x.getAttribute("aria-controls")).hidden = !on;
+    });
+  }));
+});
+</script>
+</body>
+</html>
